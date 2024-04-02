@@ -11,7 +11,7 @@ import { ProjectsModule } from './projects/projects.module';
     envFilePath: `.${process.env.NODE_ENV.trim()}.env`,
     isGlobal: true
    }), 
-    TypeOrmModule.forRoot({ ...DataSourceConfig}),
+    TypeOrmModule.forRoot({ ...DataSourceConfig }),
     UsersModule,
     ProjectsModule
   ]
